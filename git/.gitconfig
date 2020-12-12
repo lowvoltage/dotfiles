@@ -1,0 +1,18 @@
+[user]
+	name = Dimitar Kovachev
+	email = d.kovachev@gmail.com
+[pull]
+	rebase = true
+[push]
+	default = simple
+
+# [core]
+#	autocrlf = true
+
+[alias]
+        st = status
+        ci = commit
+        co = checkout
+        br = branch
+        unstage = reset HEAD --
+        last = log -1 HEAD
