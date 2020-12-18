@@ -18,6 +18,9 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
+# Enable history search with `Ctrl + R`
+bindkey "^R" history-incremental-pattern-search-backward
+
 source ~/dotfiles/zsh/powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.

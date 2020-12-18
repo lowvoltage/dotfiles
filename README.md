@@ -9,3 +9,6 @@ Then create symlinks:
 * `ln -s ~/dotfiles/zsh/.zshrc .`
 * `ln -s ~/dotfiles/vim/.vimrc .`
 
+Install fonts:
+* https://github.com/romkatv/powerlevel10k#fonts
+
