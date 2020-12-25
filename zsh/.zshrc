@@ -18,8 +18,16 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
+# Reduce the lag when switching edit modes
+export KEYTIMEOUT=1
+
 # Enable history search with `Ctrl + R`
-bindkey "^R" history-incremental-pattern-search-backward
+bindkey    "^R"     history-incremental-pattern-search-backward
+
+# Delete (forward) character iTerm2 OSX
+# https://stackoverflow.com/questions/33270381
+bindkey    "^[[3~"  delete-char
+bindkey    "^[3;5~" delete-char
 
 source ~/dotfiles/zsh/powerlevel10k/powerlevel10k.zsh-theme
 
