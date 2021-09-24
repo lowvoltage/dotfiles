@@ -9,6 +9,10 @@
 # [core]
 #	autocrlf = true
 
+# Use an additional config file for work-related repos' name and email
+[includeIf "gitdir/i:~/Work/"]
+    path = .gitconfig-work
+
 [alias]
         st = status
         ci = commit
