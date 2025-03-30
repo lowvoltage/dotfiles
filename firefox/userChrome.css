@@ -1,0 +1,26 @@
+/*
+Open a new tab in Firefox and type "about:config" then press enter
+Accept and proceed. Search for: "toolkit.legacyUserProfileCustomizations.stylesheets"
+Double click the entry to make it say "true".
+
+In the top right in Firefox, click on the three vertical lines to open the menu and click on
+"help" near the bottom. Click on "more troubleshooting information".
+Look for "profile folder" in the blue field on the left.
+Right next to it click the button that says "Open Folder".
+
+In the folder that opens, right-click and create a new folder. Name it "chrome".
+Copy this file in the new "chrome" folder
+
+Close your browser and reopen it.
+*/
+
+.tab-audio-button { display: none !important; }
+
+.tabbrowser-tab {
+    &:is([muted], [soundplaying], [activemedia-blocked]) {
+        #tabbrowser-tabs[orient="horizontal"] &:not([pinned]) {
+            --tab-min-width: unset !important;
+        --tab-icon-end-margin: 5.5px !important;
+        }
+    }
+}
