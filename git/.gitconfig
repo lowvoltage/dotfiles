@@ -1,22 +1,29 @@
 [user]
-	name = Dimitar Kovachev
-	email = d.kovachev@gmail.com
+    name = Dimitar Kovachev
+    email = d.kovachev@gmail.com
 [pull]
-	rebase = true
+    rebase = true
 [push]
-	default = simple
+    default = simple
 
-# [core]
-#	autocrlf = true
+# OS-specific configurations, e.g. `autocrlf`
+#
+[includeIf "gitdir:/Users/"]
+    path = ~/dotfiles/git/.gitconfig-macos
+[includeIf "gitdir:C:/"]
+    path = ~/dotfiles/git/.gitconfig-windows
+[includeIf "gitdir:/home/"]
+    path = ~/dotfiles/git/.gitconfig-linux
 
-# Use an additional config file for work-related repos' name and email
+# Use an additional config file for work-related repos' name and email ([user] section)
+#
 [includeIf "gitdir/i:~/Work/"]
     path = .gitconfig-work
 
 [alias]
-        st = status
-        ci = commit
-        co = checkout
-        br = branch
-        unstage = reset HEAD --
-        last = log -1 HEAD
+    st = status
+    ci = commit
+    co = checkout
+    br = branch
+    unstage = reset HEAD --
+    last = log -1 HEAD
