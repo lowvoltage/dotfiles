@@ -1,0 +1,75 @@
+tap "aws/aws"
+
+# Official Amazon AWS command-line interface
+brew "awscli"
+
+# GitHub command-line tool
+brew "gh"
+
+# Library for JPEG-2000 image manipulation
+brew "openjpeg"
+
+# Interpreter for PostScript and PDF
+brew "ghostscript"
+
+# Distributed revision control system
+brew "git"
+
+# Improved top (interactive process viewer)
+brew "htop"
+
+# Tools and libraries to manipulate images in select formats
+brew "imagemagick-full"
+
+# Lightweight and flexible command-line JSON processor
+brew "jq"
+
+# Implementation of the file(1) command
+brew "libmagic"
+
+# List USB devices, just like the Linux lsusb command
+brew "lsusb"
+
+# Object-relational database system
+brew "postgresql@18", restart_service: :changed
+
+# Terminal multiplexer
+brew "tmux"
+
+# Internet file retriever
+brew "wget"
+
+# TODO
+brew "vim"
+brew "atuin"
+brew "python@3.13"
+brew "uv"
+brew "ffmpeg"
+brew "yt-dlp"
+brew "yq"
+
+# File manager with two panels
+cask "double-commander"
+
+# TODO
+cask "google-chrome"
+cask "google-drive"
+cask "dropbox"
+cask "resilio-sync"
+cask "firefox"
+cask "thunderbird"
+cask "visual-studio-code"
+cask "postman"
+cask "pycharm-ce"
+cask "iterm2"
+cask "obsidian"
+cask "slack"
+cask "zoom"
+cask "telegram"
+cask "signal"
+cask "viber"
+cask "the-unarchiver"
+cask "disk-inventory-x"
+cask "karabiner-elements"
+cask "stats"
+cask "xnviewmp"
